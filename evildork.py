@@ -23,7 +23,7 @@
 #
 #   @Repository:  https://github.com/Fricciolosa-Red-Team/evildork
 #
-#   @Author:      edoardottt, https://www.edoardoottavianelli.it
+#   @Author:      Fricciolosa Red Team
 
 
 # ======= IMPORT =========
