@@ -1,3 +1,5 @@
+#
+# Fricciolosa Red Team presents:
 #             _ _     _            _
 #   _____   _(_) | __| | ___  _ __| | __
 #  / _ \ \ / / | |/ _` |/ _ \| '__| |/ /
@@ -19,25 +21,25 @@
 # along with this program.  If not, see http://www.gnu.org/licenses/.
 #
 #
-#   @Repository:  https://github.com/edoardottt/evildork
+#   @Repository:  https://github.com/Fricciolosa-Red-Team/evildork
 #
 #   @Author:      edoardottt, https://www.edoardoottavianelli.it
 
+
+# ======= IMPORT =========
+
+import argparse
 
 # ======= INTRO ========
 
 banner = """             _ _     _            _
    _____   _(_) | __| | ___  _ __| | __
-  / _ \ \ / / | |/ _` |/ _ \| '__| |/ /
- |  __/\ V /| | | (_| | (_) | |  |   <
-  \___| \_/ |_|_|\__,_|\___/|_|  |_|\_\\
+  / _ \\ \\ / / | |/ _` |/ _ \\| '__| |/ /
+ |  __/\\ V /| | | (_| | (_) | |  |   <
+  \\___| \\_/ |_|_|\\__,_|\\___/|_|  |_|\\_\\
 """
 
 print(banner)
-
-# ======= IMPORT =========
-
-import argparse
 
 # ======= GLOBAL VARS ========
 
