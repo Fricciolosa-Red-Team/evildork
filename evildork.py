@@ -116,8 +116,8 @@ def add_HTML_banner(filename):
     <title> EVILDORK </title>
     </head>
     <body>
-    <h1> EVILDORK </h1>
-    <h3>            by Fricciolosa Red Team </h3>
+    <h1 style="color: red;"> EVILDORK </h1>
+    <h3>by Fricciolosa Red Team </h3>
     <ul>
 
     """
