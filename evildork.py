@@ -72,6 +72,12 @@ def get_parser():
         help="Set the target (a domain)",
     )
     parser.add_argument(
+        "-s",
+        "--subdomain",
+        action="store_true",
+        help="Search also for subdomains",
+    )
+    parser.add_argument(
         "-v", "--version", action="store_true", help="Show the version of evildork"
     )
     return parser
@@ -149,9 +155,12 @@ def encode(search):
     return final
 
 
-def start_dorking(target):
+def start_dorking(target, subdomain):
 
     directory = "output-evildork"
+
+    if subdomain:
+        target = "*." + target
 
     filename = create_output_file(directory, target)
     add_HTML_banner(filename)
@@ -175,7 +184,7 @@ def main():
     if args.version:
         version()
     elif args.domain:
-        start_dorking(args.domain)
+        start_dorking(args.domain, args.subdomain)
     else:
         parser.print_help()
 

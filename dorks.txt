@@ -2,7 +2,7 @@ admin account info" filetype:log
 !Host=*.* intext:enc_UserPassword=* ext:pcf
 "# -FrontPage-" ext:pwd inurl:(service | authors | administrators | users) "# -FrontPage-" inurl:service.pwd
 "AutoCreate=TRUE password=*"
-"http://*:*@www&#8221; domainname
+"http://*:*@www&#8221;
 "index of/" "ws_ftp.ini" "parent directory"
 "liveice configuration file" ext:cfg -site:sourceforge.net
 "parent directory" +proftpdpasswd
