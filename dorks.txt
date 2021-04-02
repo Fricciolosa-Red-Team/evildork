@@ -132,7 +132,7 @@ intitle:"remote assessment" OpenAanval Console
 intitle:opengroupware.org "resistance is obsolete" "Report Bugs" "Username" "password"
 "bp blog admin" intitle:login | intitle:admin -site:johnny.ihackstuff.com
 "Emergisoft web applications are a part of our"
-"Establishing a secure Integrated Lights Out session with" OR intitle:"Data Frame - Browser not HTTP 1.1 compatible" OR intitle:"HP Integrated Lights-
+"Establishing a secure Integrated Lights Out session with" OR intitle:"Data Frame - Browser not HTTP 1.1 compatible" OR intitle:"HP Integrated Lights-"
 "HostingAccelerator" intitle:"login" +"Username" -"news" -demo
 "iCONECT 4.1 :: Login"
 "IMail Server Web Messaging" intitle:login
