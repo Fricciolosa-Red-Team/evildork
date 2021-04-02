@@ -29,144 +29,156 @@
 # ======= IMPORT =========
 
 import argparse
+import os
+import urllib.parse
+
 
 # ======= INTRO ========
 
-banner = """             _ _     _            _
+
+def banner():
+
+    RED = "\033[91m"
+    ENDC = "\033[0m"
+    banner = (
+        RED
+        + """             _ _     _            _
    _____   _(_) | __| | ___  _ __| | __
   / _ \\ \\ / / | |/ _` |/ _ \\| '__| |/ /
  |  __/\\ V /| | | (_| | (_) | |  |   <
   \\___| \\_/ |_|_|\\__,_|\\___/|_|  |_|\\_\\
 """
+        + ENDC
+    )
 
-print(banner)
+    print(banner)
+
 
 # ======= GLOBAL VARS ========
 
-sleep_time = 10
-banned = False
-
-
-# - Login pages -
-
-wp1 = "inurl:wp-admin"
-wp2 = "inurl:wp-login"
-portal = "inurl:portal"
-userportal = "inurl:userportal"
-remote = "inurl:remote"
-dashboard = "inurl:dashboard"
-admin = "inurl:admin"
-adminlogin = "inurl:adminlogin"
-login = "inurl:login"
-loginpanel = "inurl:loginpanel"
-memberlogin = "inurl:memberlogin"
-cplogin = "inurl:cplogin"
-weblogin = "inurl:weblogin"
-quicklogin = "inurl:quicklogin"
-auth = "inurl:auth"
-exc = "inurl:exchange"
-fp = "inurl:ForgotPassword"
-test = "inurl:test"
-
-loginpages = [
-    wp1,
-    wp2,
-    portal,
-    userportal,
-    remote,
-    dashboard,
-    admin,
-    adminlogin,
-    login,
-    loginpanel,
-    memberlogin,
-    cplogin,
-    weblogin,
-    quicklogin,
-    auth,
-    exc,
-    fp,
-    test,
-]
-
-# - Filetypes -
-
-xls = "filetype:xls"  # Filetype XLS (MsExcel 97-2003)
-xlsx = "filetype:xlsx"  # Filetype XLSX (MsExcel 2007+)
-doc = "filetype:doc"  # Filetype DOC (MsWord 97-2003)
-docx = "filetype:docx"  # Filetype DOCX (MsWord 2007+)
-ppt = "filetype:ppt"  # Filetype PPT (MsPowerPoint 97-2003)
-pptx = "filetype:pptx"  # Filetype PPTX (MsPowerPoint 2007+)
-mdb = "filetype:mdb"  # Filetype MDB (Ms Access)
-pdf = "filetype:pdf"  # Filetype PDF
-sql = "filetype:sql"  # Filetype SQL
-rtf = "filetype:rtf"  # Filetype RTF
-csv = "filetype:csv"  # Filetype CSV
-xml = "filetype:xml"  # Filetype XML
-key = "filetype:key"  # Filetype KEY
-cert = "filetype:cert"  # Filetype CERT
-pem = "filetype:pem"  # Filetype PEM
-conf = "filetype:conf"  # Filetype CONF
-dat = "filetype:dat"  # Filetype DAT
-txt = "filetype:txt"  # Filetype TXT
-ini = "filetype:ini"  # Filetype INI
-log = "filetype:log"  # Filetype LOG
-env = "fietype:env"  # Filetype ENV
-idrsa = "index%20of:id_rsa%20id_rsa.pub"  # File ID_RSA
-
-
-filetypes = [
-    xls,
-    xlsx,
-    doc,
-    docx,
-    ppt,
-    pptx,
-    mdb,
-    pdf,
-    sql,
-    rtf,
-    csv,
-    xml,
-    key,
-    cert,
-    pem,
-    conf,
-    dat,
-    txt,
-    ini,
-    log,
-    env,
-    idrsa,
-]
-
-# - Directory traversal -
-parent = "intitle:%22index%20of%22%20%22parent%20directory%22"  # Common traversal
-dcim = "intitle:%22index%20of%22%20%22DCIM%22"  # Photo
-ftp = "intitle:%22index%20of%22%20%22ftp%22"  # FTP
-backup = "intitle:%22index%20of%22%20%22backup%22"  # BackUp
-mail = "intitle:%22index%20of%22%20%22mail%22"  # Mail
-password = "intitle:%22index%20of%22%20%22password%22"  # Password
-pub = "intitle:%22index%20of%22%20%22pub%22"  # Pub
-
-dirtraversals = [parent, dcim, ftp, backup, mail, password, pub]
-
-# - Webcam -
-
-webcamxp5 = 'intitle:"webcamxp 5"'
-
-webcams = [webcamxp5]
-
+dorks_file = "dorks.txt"
 
 # ======= ARGUMENT ========
 
 
-def parse_args():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-d", help="the domain you want to scrape")
-    parser.add_argument("-k", help="the keyword you want to insert in the search")
-    args = parser.parse_args()
-    return args
+def get_parser():
+    """Create and return a parser (argparse.ArgumentParser instance) for main()
+    to use"""
+    parser = argparse.ArgumentParser(description="Evildork targeting your fiancee")
+    parser.add_argument(
+        "-d",
+        "--domain",
+        type=str,
+        help="Set the target (a domain)",
+    )
+    parser.add_argument(
+        "-v", "--version", action="store_true", help="Show the version of evildork"
+    )
+    return parser
 
 
 # ======== FUNCTIONS =======
+
+
+def create_output_folder(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+
+def create_output_file(directory, target):
+
+    create_output_folder(directory)
+    filename = directory + "/" + "evildork-" + target + ".html"
+
+    if os.path.exists(filename):
+        choice = input(
+            "[!] {} already exists. Do you want to overwrite? (y/n):".format(filename)
+        )
+        if str(choice).lower() != "y":
+            exit(1)
+        # if choice == y: ====> go forward. The file's content will be flushed and overwritten
+    else:
+        os.mknod(filename)
+    return filename
+
+
+def add_HTML_banner(filename):
+
+    html_banner = """
+    <html>
+    <head>
+    <title> EVILDORK </title>
+    </head>
+    <body>
+    <h1> EVILDORK </h1>
+    <h3>            by Fricciolosa Red Team </h3>
+    <ul>
+
+    """
+
+    with open(filename, "w+") as f:
+        f.write(html_banner)
+
+
+def add_HTML_footer(filename):
+
+    html_banner = """
+    </ul>
+    </body>
+    </html>
+    """
+
+    with open(filename, "a+") as f:
+        f.write(html_banner)
+
+
+def add_dorks(target, filename):
+
+    with open("dorks.txt", "r") as f:
+        text = f.readlines()
+
+    with open(filename, "a") as f:
+        for elem in text:
+            f.write("<li>" + encode(elem + " inurl:" + target) + "</li>\n")
+
+
+def encode(search):
+    base_url = "https://www.google.com/search?q="
+    result = base_url + urllib.parse.quote(search)
+    final = "<a href='" + result + "' target='_blank'>" + search + "</a>"
+    return final
+
+
+def start_dorking(target):
+
+    directory = "output-evildork"
+
+    filename = create_output_file(directory, target)
+    add_HTML_banner(filename)
+    add_dorks(target, filename)
+    add_HTML_footer(filename)
+    command = "xdg-open " + filename
+    os.system(command)
+
+
+def version():
+    print("v0.1")
+
+
+def main():
+
+    banner()
+
+    parser = get_parser()
+    args = parser.parse_args()
+
+    if args.version:
+        version()
+    elif args.domain:
+        start_dorking(args.domain)
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()
