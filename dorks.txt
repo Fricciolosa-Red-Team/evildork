@@ -306,10 +306,7 @@ inurl:"typo3/index.php?u=" -demo
 inurl:"usysinfo?login=true"
 inurl:"utilities/TreeView.asp"
 inurl:"vsadmin/login" | inurl:"vsadmin/admin" inurl:.php|.asp
-
-Code:
-
-nurl:/admin/login.asp
+inurl:/admin/login.asp
 inurl:/cgi-bin/sqwebmail?noframes=1
 inurl:/Citrix/Nfuse17/
 inurl:/dana-na/auth/welcome.html

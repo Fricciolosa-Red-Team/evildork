@@ -139,7 +139,7 @@ def add_dorks(target, filename):
 
     with open(filename, "a") as f:
         for elem in text:
-            f.write("<li>" + encode(elem + " inurl:" + target) + "</li>\n")
+            f.write("<li>" + encode(elem + " site:" + target) + "</li>\n")
 
 
 def encode(search):
