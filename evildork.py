@@ -52,6 +52,8 @@ def banner():
     )
 
     print(banner)
+    print("                 by Fricciolosa Red Team")
+    print()
 
 
 # ======= GLOBAL VARS ========
