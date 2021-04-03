@@ -65,7 +65,6 @@ filetype:sql "insert into" (pass|passwd|password)
 filetype:sql ("values * MD5″ | "values * password" | "values * encrypt")
 filetype:sql +"IDENTIFIED BY" -cvs
 filetype:sql password
-filetype:url +inurl:"ftp://" +inurl:";@"
 filetype:xls username password email
 htpasswd
 htpasswd / htgroup
