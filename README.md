@@ -3,14 +3,14 @@
 - dork only one specific domain or all subdomains available
 - produce an html output result page with all links
 
-# Installation
+## Installation
 
 - `git clone https://github.com/Fricciolosa-Red-Team/evildork.git`
 - `cd evildork`
 - `pip3 install -r requirements`
 - `python3 evildork.py`
 
-# Usage
+## Usage
 
 ```
 usage: evildork.py [-h] [-d DOMAIN] [-s] [-v]
