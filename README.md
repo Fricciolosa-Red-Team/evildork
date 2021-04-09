@@ -24,3 +24,8 @@ optional arguments:
   -s, --subdomain       Search also for subdomains
   -v, --version         Show the version of evildork
 ```
+
+## Examples
+
+- `python3 evildork.py -d target.example`
+- `python3 evildork.py -d target.example -s`
