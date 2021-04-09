@@ -7,7 +7,6 @@
 
 - `git clone https://github.com/Fricciolosa-Red-Team/evildork.git`
 - `cd evildork`
-- `pip3 install -r requirements`
 - `python3 evildork.py`
 
 ## Usage
