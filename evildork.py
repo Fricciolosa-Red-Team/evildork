@@ -6,6 +6,7 @@
 # |  __/\ V /| | | (_| | (_) | |  |   <
 #  \___| \_/ |_|_|\__,_|\___/|_|  |_|\_\
 #
+#               Targeting your fiancee.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -67,7 +68,8 @@ def get_parser():
     """Create and return a parser (argparse.ArgumentParser instance) for main()
     to use"""
     parser = argparse.ArgumentParser(description="Evildork targeting your fiancee")
-    parser.add_argument(
+    target = parser.add_mutually_exclusive_group()
+    target.add_argument(
         "-d",
         "--domain",
         type=str,
@@ -78,6 +80,12 @@ def get_parser():
         "--subdomain",
         action="store_true",
         help="Search also for subdomains",
+    )
+    target.add_argument(
+        "-t",
+        "--target",
+        type=str,
+        help="Set the target (general)",
     )
     parser.add_argument(
         "-v", "--version", action="store_true", help="Show the version of evildork"
@@ -140,14 +148,18 @@ def add_HTML_footer(filename):
         f.write(html_banner)
 
 
-def add_dorks(target, filename):
+def add_dorks(target, filename, type_target):
 
     with open("dorks.txt", "r") as f:
         text = f.readlines()
 
     with open(filename, "a") as f:
-        for elem in text:
-            f.write("<li>" + encode(elem + " site:" + target) + "</li>\n")
+        if type_target == "domain":
+            for elem in text:
+                f.write("<li>" + encode(elem + " site:" + target) + "</li>\n")
+        else:
+            for elem in text:
+                f.write("<li>" + encode(elem + ' "' + target + '"') + "</li>\n")
 
 
 def encode(search):
@@ -157,7 +169,7 @@ def encode(search):
     return final
 
 
-def start_dorking(target, subdomain):
+def start_dorking(target, subdomain, type_target):
 
     directory = "output-evildork"
 
@@ -166,7 +178,7 @@ def start_dorking(target, subdomain):
 
     filename = create_output_file(directory, target)
     add_HTML_banner(filename)
-    add_dorks(target, filename)
+    add_dorks(target, filename, type_target)
     add_HTML_footer(filename)
     command = "xdg-open " + filename
     os.system(command)
@@ -186,7 +198,9 @@ def main():
     if args.version:
         version()
     elif args.domain:
-        start_dorking(args.domain, args.subdomain)
+        start_dorking(args.domain, args.subdomain, "domain")
+    elif args.target:
+        start_dorking(args.target, False, "target")
     else:
         parser.print_help()
 
