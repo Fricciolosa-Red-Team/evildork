@@ -150,7 +150,12 @@ def add_HTML_footer(filename):
 
 def add_dorks(target, filename, type_target):
 
-    with open("dorks.txt", "r") as f:
+    if type_target == "domain":
+        dorks_file = "dorks-domain.txt"
+    else:
+        dorks_file = "dorks-target.txt"
+
+    with open(dorks_file, "r") as f:
         text = f.readlines()
 
     with open(filename, "a") as f:
