@@ -124,11 +124,16 @@ def add_HTML_banner(filename):
     html_banner = """
     <html>
     <head>
+    <link rel="stylesheet" href="../style.css">
     <title> EVILDORK </title>
     </head>
     <body>
-    <h1 style="color: red;"> EVILDORK </h1>
-    <h3>by Fricciolosa Red Team </h3>
+    <div class="topnav">
+    <a href="https://github.com/Fricciolosa-Red-Team">Fricciolosa Red Team</a>
+    <a href="https://github.com/Fricciolosa-Red-Team/evildork">Contribute to evildork</a>
+    </div>
+    <h1 class="evildork">EVILDORK</h1>
+    <h3 class="fricciolosa">by Fricciolosa Red Team </h3>
     <ul>
 
     """
@@ -141,6 +146,10 @@ def add_HTML_footer(filename):
 
     html_banner = """
     </ul>
+    <div class="footer">
+        <p>evildork by <a href='https://github.com/Fricciolosa-Red-Team'>Fricciolosa Red Team</a></p>
+    </div>
+    <br><br><br><br><br><br><br><br>
     </body>
     </html>
     """
