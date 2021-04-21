@@ -1,4 +1,4 @@
-# evildork🐍
+# evildork👁️
 
 - dork only one specific domain or all subdomains available
 - dork targeting a general target (likely to be a person)
