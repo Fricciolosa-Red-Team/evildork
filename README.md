@@ -12,7 +12,7 @@
 ## Usage
 
 ```
-usage: evildork.py [-h] [-d DOMAIN] [-s] [-v]
+usage: evildork.py [-h] [-d DOMAIN] [-s] [-t TARGET] [-v]
 
 Evildork targeting your fiancee
 
@@ -21,6 +21,8 @@ optional arguments:
   -d DOMAIN, --domain DOMAIN
                         Set the target (a domain)
   -s, --subdomain       Search also for subdomains
+  -t TARGET, --target TARGET
+                        Set the target (general)
   -v, --version         Show the version of evildork
 ```
 
@@ -28,3 +30,4 @@ optional arguments:
 
 - `python3 evildork.py -d target.example`
 - `python3 evildork.py -d target.example -s`
+- `python3 evildork.py -t random_username`
