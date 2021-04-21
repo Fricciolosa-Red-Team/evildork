@@ -1,0 +1,9 @@
+site:*.twitter.com
+site:*.facebook.com
+site:*.linkedin.com
+site:*.instagram.com
+site:*.youtube.com
+site:*.tiktok.com
+site:*.github.com
+site:*.pinterest.com
+site:*.snapchat.com
