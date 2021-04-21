@@ -7,3 +7,10 @@ site:*.tiktok.com
 site:*.github.com
 site:*.pinterest.com
 site:*.snapchat.com
+intext:"@gmail.com"
+ext:txt
+ext:md
+ext:pdf
+ext:log
+ext:xlsx
+ext:docx
