@@ -104,6 +104,7 @@ def create_output_folder(directory):
 def create_output_file(directory, target):
 
     create_output_folder(directory)
+    target = target.replace(" ", "-")
     filename = directory + "/" + "evildork-" + target + ".html"
 
     if os.path.exists(filename):
@@ -164,7 +165,7 @@ def add_dorks(target, filename, type_target):
                 f.write("<li>" + encode(elem + " site:" + target) + "</li>\n")
         else:
             for elem in text:
-                f.write("<li>" + encode(elem + ' "' + target + '"') + "</li>\n")
+                f.write("<li>" + encode(elem + " " + target) + "</li>\n")
 
 
 def encode(search):
