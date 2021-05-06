@@ -1,4 +1,5 @@
 phpinfo()
+filetype:pcf
 filetype:asp "Custom Error Message" Category Source
 filetype:asp DBQ=" * Server.MapPath("*.mdb")
 filetype:asp + "[ODBC SQL"
