@@ -8,6 +8,7 @@ site:*.github.com
 site:*.pinterest.com
 site:*.snapchat.com
 intext:"@gmail.com"
+intext:"@protonmail.com"
 ext:txt
 ext:md
 ext:pdf
