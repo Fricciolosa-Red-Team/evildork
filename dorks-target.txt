@@ -10,6 +10,12 @@ site:*.snapchat.com
 intext:"@gmail.com"
 intext:"@protonmail.com"
 intext:"@yahoo.com"
+intext:"@hotmail.com"
+intext:"@live.com"
+intext:"@outlook.com"
+intext:"@alice.it"
+intext:"@libero.it"
+intext:"@live.it"
 ext:txt
 ext:md
 ext:pdf
