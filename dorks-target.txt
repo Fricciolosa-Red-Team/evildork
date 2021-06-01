@@ -9,6 +9,7 @@ site:*.pinterest.com
 site:*.snapchat.com
 intext:"@gmail.com"
 intext:"@protonmail.com"
+intext:"@yahoo.com"
 ext:txt
 ext:md
 ext:pdf
