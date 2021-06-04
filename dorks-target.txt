@@ -63,11 +63,16 @@ intext:"@outlook.com"
 intext:"@alice.it"
 intext:"@libero.it"
 intext:"@live.it"
+intext:"email"
 ext:txt
 ext:md
 ext:pdf
 ext:log
 ext:xlsx
+ext:ovpn
+ext:odt
+ext:php
+ext:html
 ext:docx
 ext:jpg
 ext:jpeg
