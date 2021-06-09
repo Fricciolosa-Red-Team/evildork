@@ -33,6 +33,10 @@ optional arguments:
 - `python3 evildork.py -d target.example -s`
 - `python3 evildork.py -t random_username`
 
+## Contributing
+
+If you want to submit new dorks, just open an issue.
+
 ## License
 
 This repository is under [GNU General Public License v3.0](https://github.com/Fricciolosa-Red-Team/evildork/blob/master/LICENSE).
