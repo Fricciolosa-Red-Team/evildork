@@ -11,6 +11,7 @@ site:*.instagram.com
 site:*.youtube.com
 site:*.tiktok.com
 site:github.com
+site:*.github.com
 site:*.gitlab.com
 site:*.pinterest.com
 site:*.snapchat.com
