@@ -578,7 +578,6 @@ htpasswd
 htpasswd / htgroup
 htpasswd / htpasswd.bak
 "HTTP_FROM=googlebot" googlebot.com "Server_Software="
-"http://*:*@www&#8221;
 "iCONECT 4.1 :: Login"
 ICQ chat logs, please…
 IIS 4.0 error messages
@@ -728,8 +727,6 @@ UebiMiau" -site:sourceforge.net
 Ultima Online loginservers
 "Unable to jump to row" "on MySQL result index" "on line"
 "Unclosed quotation mark before the character string"
-Unreal IRCd
-: vBulletin Version 1.1.5″
 "Version Info" "Boot Version" "Internet Settings"
 "VHCS Pro ver" -demo
 "VNC Desktop" inurl:5800
