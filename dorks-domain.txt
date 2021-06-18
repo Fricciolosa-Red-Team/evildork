@@ -1,4 +1,9 @@
 phpinfo()
+intitle:"index of" "/aws.s3/"
+filetype:env intext:AWS_SECRET
+intitle: Index of /awstats/data
+intitle:index.of "awsconfig.json"
+intitle:"index of" "aws-config.php"
 filetype:pcf
 filetype:asp "Custom Error Message" Category Source
 filetype:asp DBQ=" * Server.MapPath("*.mdb")
@@ -135,8 +140,7 @@ intext:"enable password 7″
 intext:"enable secret 5 $"
 intext:"Error Message : Error loading required libraries."
 intext:"EZGuestbook"
-intext:"Fill out the form below completely to change your password and user name. If new username is left blank, your old one will be assumed." -edu
-intext:gmail invite intext:http://gmail.google.com/gmail/a
+intext:"Fill out the form below completely to change your password and user name" -edu
 intext:"Mail admins login here to administrate your domain."
 intext:"Master Account" "Domain Name" "Password" inurl:/cgi-bin/qmailadmin
 intext:(password | passcode) intext:(username | userid | user) filetype:csv
@@ -165,7 +169,6 @@ intitle:"ASP Stats Generator *.*" "ASP Stats Generator" "2003-2004 weppos"
 intitle:asterisk.management.portal web-access
 intitle:"Athens Authentication Point"
 intitle:"Azureus : Java BitTorrent Client Tracker"
-intitle:"b2evo > Login form" "Login form. You must log in! You will have to accept cookies in order to log in" -demo -site:b2evolution.net
 intitle:"Belarc Advisor Current Profile" intext:"Click here for Belarc's PC Management products, for large and small companies."
 intitle:"Big Sister" +"OK Attention Trouble"
 intitle:"BNBT Tracker Info"
