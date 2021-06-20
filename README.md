@@ -35,7 +35,7 @@ optional arguments:
 
 ## Contributing
 
-If you want to submit new dorks, just open an issue.
+If you want to submit new dorks, just open an [issue](https://github.com/Fricciolosa-Red-Team/evildork/issues).
 
 ## License
 
