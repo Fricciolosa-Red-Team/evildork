@@ -1,8 +1,8 @@
 # evildork👁️
 
-- dork only one specific domain or all subdomains available
-- dork targeting a general target (likely to be a person)
-- produce an html output result page with all links
+- Dork only one specific domain or all subdomains available
+- Dork targeting a general target (likely to be a person)
+- Produce an html output result page with all links
 
 ## Installation
 
