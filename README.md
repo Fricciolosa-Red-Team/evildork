@@ -4,13 +4,13 @@
 - Dork targeting a general target (likely to be a person)
 - Produce an html output result page with all links
 
-## Installation
+## Installation 📥
 
 - `git clone https://github.com/Fricciolosa-Red-Team/evildork.git`
 - `cd evildork`
 - `python3 evildork.py`
 
-## Usage
+## Usage 🚀
 
 ```
 usage: evildork.py [-h] [-d DOMAIN] [-s] [-t TARGET] [-v]
@@ -27,16 +27,16 @@ optional arguments:
   -v, --version         Show the version of evildork
 ```
 
-## Examples
+## Examples ⚙️
 
 - `python3 evildork.py -d target.example`
 - `python3 evildork.py -d target.example -s`
 - `python3 evildork.py -t random_username`
 
-## Contributing
+## Contributing 🤝
 
 If you want to submit new dorks, just open an [issue](https://github.com/Fricciolosa-Red-Team/evildork/issues) / [pull request](https://github.com/Fricciolosa-Red-Team/evildork/pulls).
 
-## License
+## License 📜
 
 This repository is under [GNU General Public License v3.0](https://github.com/Fricciolosa-Red-Team/evildork/blob/master/LICENSE).
