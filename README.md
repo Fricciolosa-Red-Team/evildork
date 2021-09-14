@@ -31,7 +31,7 @@ optional arguments:
 
 - `python3 evildork.py -d target.example`
 - `python3 evildork.py -d target.example -s`
-- `python3 evildork.py -t random_username`
+- `python3 evildork.py -t username`
 
 ## Contributing 🤝
 
