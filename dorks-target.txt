@@ -30,6 +30,8 @@ site:*.tagged.com
 site:*.badoo.com
 site:*.myspace.com
 site:*.mix.com
+site:*.onlyfans.com
+site:onlyfans.com
 site:*.the-dots.com
 site:*.skyrock.com
 site:*.viber.com
