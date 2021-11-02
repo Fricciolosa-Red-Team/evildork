@@ -2,6 +2,7 @@ ext:txt
 ext:php
 ext:php5
 ext:phtml
+ext:xhtml
 ext:key
 ext:pem
 ext:ovpn
