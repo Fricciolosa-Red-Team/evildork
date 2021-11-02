@@ -1,125 +1,39 @@
-phpinfo()
-intitle:"index of" "/aws.s3/"
-filetype:env intext:AWS_SECRET
-intitle: Index of /awstats/data
-intitle:index.of "awsconfig.json"
-intitle:"index of" "aws-config.php"
-filetype:pcf
-filetype:asp "Custom Error Message" Category Source
-filetype:asp DBQ=" * Server.MapPath("*.mdb")
-filetype:asp + "[ODBC SQL"
-filetype:bak createobject sa
-filetype:bak inurl:"htaccess|passwd|shadow|htusers"
-filetype:bkf bkf
-filetype:blt blt +intext:screenname
-filetype:blt "buddylist"
-filetype:cfg auto_inst.cfg
-filetype:cfg mrtg "target
-filetype:cfm "cfapplication name" password
-filetype:cgi inurl:"fileman.cgi"
-filetype:cgi inurl:"Web_Store.cgi"
-filetype:cnf inurl:_vti_pvt access.cnf
-filetype:config config intext:appSettings "User ID"
-filetype:config web.config -CVS
-filetype:conf inurl:firewall -intitle:cvs
-filetype:conf oekakibbs
-filetype:conf slapd.conf
-filetype:ctt Contact
-filetype:ctt ctt messenger
-filetype:dat inurl:Sites.dat
-filetype:dat "password.dat"
-filetype:dat wand.dat
-filetype:eml eml +intext:"Subject" +intext:"From" +intext:"To"
-filetype:fp3 fp3
-filetype:fp5 fp5 -site:gov -site:mil -"cvs log"
-filetype:fp7 fp7
-filetype:inc dbconn
-filetype:inc intext:mysql_connect
-filetype:inc mysql_connect OR mysql_pconnect
-filetype:inf inurl:capolicy.inf
-filetype:inf sysprep
-filetype:ini inurl:flashFXP.ini
-filetype:ini inurl:"serv-u.ini"
-filetype:ini ServUDaemon
-filetype:ini wcx_ftp
-filetype:ini ws_ftp pwd
-filetype:ldb admin
-filetype:lic lic intext:key
-filetype:log access.log -CVS
-filetype:log cron.log
-filetype:log intext:"ConnectionManager2″
-filetype:log inurl:"password.log"
-filetype:log "PHP Parse error" | "PHP Warning" | "PHP Error"
-filetype:log "See `ipsec -copyright"
-( filetype:mail | filetype:eml | filetype:mbox | filetype:mbx ) intext:password|subject
-filetype:mbx mbx intext:Subject
-filetype:mdb inurl:users.mdb
-filetype:mdb wwforum
-filetype:myd myd -CVS
-filetype:netrc password
-filetype:ns1 ns1
-filetype:ora ora
-filetype:ora tnsnames
-filetype:pass pass intext:userid
-filetype:pdb pdb backup (Pilot | Pluckerdb)
-filetype:pdf "Assessment Report" nessus
-filetype:pem intext:private
-filetype:php inurl:index inurl:phpicalendar -site:sourceforge.net
-filetype:php inurl:ipinfo.php "Distributed Intrusion Detection System"
-filetype:php inurl:"logging.php" "Discuz" error
-filetype:php inurl:nqt intext:"Network Query Tool"
-filetype:php inurl:vAuthenticate
-filetype:php inurl:"webeditor.php"
-filetype:pl "Download: SuSE Linux Openexchange Server CA"
-filetype:pl intitle:"Ultraboard Setup"
-filetype:pot inurl:john.pot
-filetype:properties inurl:db intext:password
-filetype:PS ps
-filetype:pst inurl:"outlook.pst"
-filetype:pst pst -from -to -date
-filetype:pwd service
-filetype:pwl pwl
-filetype:qbb qbb
-filetype:QBW qbw
-filetype:r2w r2w
-filetype:rdp rdp
-filetype:reg reg HKEY_CURRENT_USER SSHHOSTKEYS
-filetype:reg reg +intext:â? WINVNC3â?
-filetype:reg reg +intext:"defaultusername" +intext:"defaultpassword"
-filetype:reg "Terminal Server Client"
-filetype:sql +"IDENTIFIED BY" -cvs
-filetype:sql "insert into" (pass|passwd|password)
-filetype:sql password
-filetype:sql ("values * MD5″ | "values * password" | "values * encrypt")
-filetype:vcs vcs
-filetype:vsd vsd network -samples -examples
-filetype:wab wab
-filetype:xls inurl:"email.xls"
-filetype:xls -site:gov inurl:contact
-filetype:xls username password email
 ext:txt
+ext:php
+ext:php5
+ext:phtml
 ext:key
 ext:pem
 ext:ovpn
 ext:log
+ext:asp
+ext:aspx
+ext:jsp
+ext:dat
+ext:yml
+ext:yaml
+ext:json
+ext:xml
+ext:env
+ext:conf
+ext:ini
+ext:cfg
+ext:cgi
+ext:ccm
+ext:sql
+ext:cdx
+ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (intext:confidential salary | intext:"budget approved") inurl:confidential
+ext:gho
+ext:ics
 ext:asa | ext:bak intext:uid intext:pwd -"uid..pwd" database | server | dsn
-ext:asp inurl:pathto.asp
-ext:ccm ccm -catacomb
-ext:CDX CDX
-ext:cfg radius.cfg
 ext:cgi intext:"nrg-" " This web page was created on "
 ext:cgi intitle:"control panel" "enter your owner password to continue!"
 ext:cgi inurl:editcgi.cgi inurl:file=
 ext:conf inurl:rsyncd.conf -cvs -man
 ext:conf NoCatAuth -cvs
-ext:dat bpk.dat
-ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (intext:confidential salary | intext:"budget approved") inurl:confidential
-ext:gho gho
-ext:ics ics
 ext:inc "pwd=" "UID="
 ext:ini eudora.ini
 ext:ini intext:env.ini
-ext:ini Version=4.0.0.4 password
 ext:jbf jbf
 ext:ldif ldif
 ext:log "Software: Microsoft Internet Information Services *.*"
@@ -132,9 +46,8 @@ ext:reg "username=*" putty
 ext:txt "Final encryption key"
 ext:txt inurl:dxdiag
 ext:txt inurl:unattend.txt
-ext:vmdk vmdk
-ext:vmx vmx
-ext:yml database inurl:config
+ext:vmdk
+ext:vmx
 intext:""BiTBOARD v2.0″ BiTSHiFTERS Bulletin Board"
 intext:"enable password 7″
 intext:"enable secret 5 $"
@@ -155,8 +68,9 @@ intext:"Warning: Failed opening" "on line" "include_path"
 intext:"Web Wiz Journal"
 intext:"Welcome to" inurl:"cp" intitle:"H-SPHERE" inurl:"begin.html" -Fee
 intext:"Welcome to the Web V.Networks" intitle:"V.Networks [Top]" -filetype:htm
-"intitle:3300 Integrated Communications Platform" inurl:main.htm
-intitle:admin intitle:login
+intitle:"3300 Integrated Communications Platform" inurl:main.htm
+intitle:"admin" 
+intitle:"login"
 intitle:"Admin Login" "admin login" "blogware"
 intitle:"Admin login" "Web Site Administration" "Copyright"
 intitle:"admin panel" +"
@@ -175,8 +89,8 @@ intitle:"BNBT Tracker Info"
 intitle:Bookmarks inurl:bookmarks.html "Bookmarks
 intitle:"Cisco CallManager User Options Log On" "Please enter your User ID and Password in the spaces provided below and click the Log On button to co
 intitle:"ColdFusion Administrator Login"
-intitle:"communigate pro * *" intitle:"entrance"
-intitle:Configuration.File inurl:softcart.exe
+intitle:"communigate pro" intitle:"entrance"
+intitle:"Configuration.File" inurl:softcart.exe
 intitle:"Content Management System" "user name"|"password"|"admin" "Microsoft IE 5.5″ -mambo
 intitle:"curriculum vitae" filetype:doc
 intitle:"Default PLESK Page"
@@ -334,6 +248,8 @@ intitle:"XcAuctionLite" | "DRIVEN BY XCENT" Lite inurl:admin
 intitle:"XMail Web Administration Interface" intext:Login intext:password
 intitle:"Zope Help System" inurl:HelpSys
 intitle:"ZyXEL Prestige Router" "Enter password"
+inurl:xmlrpc
+inurl:setup
 inurl:":10000″ intext:webmin
 inurl:"1220/parse_xml.cgi?"
 inurl:1810 "Oracle Enterprise Manager"
@@ -507,6 +423,104 @@ allinurl:install/install.php
 allinurl:intranet admin
 allinurl:servlet/SnoopServlet
 allinurl:wps/portal/ login
+intitle:"index of" "/aws.s3/"
+filetype:env intext:AWS_SECRET
+intitle: Index of /awstats/data
+intitle:index.of "awsconfig.json"
+intitle:"index of" "aws-config.php"
+filetype:pcf
+filetype:asp "Custom Error Message" Category Source
+filetype:asp DBQ=" * Server.MapPath("*.mdb")
+filetype:asp + "[ODBC SQL"
+filetype:bak createobject sa
+filetype:bak inurl:"htaccess|passwd|shadow|htusers"
+filetype:bkf bkf
+filetype:blt blt +intext:screenname
+filetype:blt "buddylist"
+filetype:cfg auto_inst.cfg
+filetype:cfg mrtg "target
+filetype:cfm "cfapplication name" password
+filetype:cgi inurl:"fileman.cgi"
+filetype:cgi inurl:"Web_Store.cgi"
+filetype:cnf inurl:_vti_pvt access.cnf
+filetype:config config intext:appSettings "User ID"
+filetype:config web.config -CVS
+filetype:conf inurl:firewall -intitle:cvs
+filetype:conf oekakibbs
+filetype:conf slapd.conf
+filetype:ctt Contact
+filetype:ctt ctt messenger
+filetype:dat inurl:Sites.dat
+filetype:dat "password.dat"
+filetype:dat wand.dat
+filetype:eml eml +intext:"Subject" +intext:"From" +intext:"To"
+filetype:fp3 fp3
+filetype:fp5 fp5 -site:gov -site:mil -"cvs log"
+filetype:fp7 fp7
+filetype:inc dbconn
+filetype:inc intext:mysql_connect
+filetype:inc mysql_connect OR mysql_pconnect
+filetype:inf inurl:capolicy.inf
+filetype:inf sysprep
+filetype:ini inurl:flashFXP.ini
+filetype:ini inurl:"serv-u.ini"
+filetype:ini ServUDaemon
+filetype:ini wcx_ftp
+filetype:ini ws_ftp pwd
+filetype:ldb admin
+filetype:lic lic intext:key
+filetype:log access.log -CVS
+filetype:log cron.log
+filetype:log intext:"ConnectionManager2″
+filetype:log inurl:"password.log"
+filetype:log "PHP Parse error" | "PHP Warning" | "PHP Error"
+filetype:log "See `ipsec -copyright"
+( filetype:mail | filetype:eml | filetype:mbox | filetype:mbx ) intext:password|subject
+filetype:mbx mbx intext:Subject
+filetype:mdb inurl:users.mdb
+filetype:mdb wwforum
+filetype:myd myd -CVS
+filetype:netrc password
+filetype:ns1 ns1
+filetype:ora ora
+filetype:ora tnsnames
+filetype:pass pass intext:userid
+filetype:pdb pdb backup (Pilot | Pluckerdb)
+filetype:pdf "Assessment Report" nessus
+filetype:pem intext:private
+filetype:php inurl:index inurl:phpicalendar -site:sourceforge.net
+filetype:php inurl:ipinfo.php "Distributed Intrusion Detection System"
+filetype:php inurl:"logging.php" "Discuz" error
+filetype:php inurl:nqt intext:"Network Query Tool"
+filetype:php inurl:vAuthenticate
+filetype:php inurl:"webeditor.php"
+filetype:pl "Download: SuSE Linux Openexchange Server CA"
+filetype:pl intitle:"Ultraboard Setup"
+filetype:pot inurl:john.pot
+filetype:properties inurl:db intext:password
+filetype:PS ps
+filetype:pst inurl:"outlook.pst"
+filetype:pst pst -from -to -date
+filetype:pwd service
+filetype:pwl pwl
+filetype:qbb qbb
+filetype:QBW qbw
+filetype:r2w r2w
+filetype:rdp rdp
+filetype:reg reg HKEY_CURRENT_USER SSHHOSTKEYS
+filetype:reg reg +intext:â? WINVNC3â?
+filetype:reg reg +intext:"defaultusername" +intext:"defaultpassword"
+filetype:reg "Terminal Server Client"
+filetype:sql +"IDENTIFIED BY" -cvs
+filetype:sql "insert into" (pass|passwd|password)
+filetype:sql password
+filetype:sql ("values * MD5″ | "values * password" | "values * encrypt")
+filetype:vcs vcs
+filetype:vsd vsd network -samples -examples
+filetype:wab wab
+filetype:xls inurl:"email.xls"
+filetype:xls -site:gov inurl:contact
+filetype:xls username password email
 4images Administration Control Panel
 +":8080″ +":3128″ +":80″ filetype:txt
 94FBR "ADOBE PHOTOSHOP"
@@ -759,4 +773,4 @@ XOOPS Custom Installation
 "you can now password" | "this is a special page only seen by you. your profile visitors" inurl:imchaos
 "You have requested access to a restricted area of our website. Please authenticate yourself to continue."
 "You have requested to access the management functions" -.edu
-"your password is" filetype:log
+"your password is"
