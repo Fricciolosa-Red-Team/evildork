@@ -49,8 +49,8 @@ ext:txt inurl:dxdiag
 ext:txt inurl:unattend.txt
 ext:vmdk
 ext:vmx
-intext:""BiTBOARD v2.0″ BiTSHiFTERS Bulletin Board"
-intext:"enable password 7″
+inurl:&
+intext:"enable password″
 intext:"enable secret 5 $"
 intext:"Error Message : Error loading required libraries."
 intext:"EZGuestbook"
