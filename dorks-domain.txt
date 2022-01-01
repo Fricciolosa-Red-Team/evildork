@@ -51,7 +51,6 @@ ext:vmdk
 ext:vmx
 inurl:&
 intext:"enable password″
-intext:"enable secret 5 $"
 intext:"Error Message : Error loading required libraries."
 intext:"EZGuestbook"
 intext:"Fill out the form below completely to change your password and user name" -edu
@@ -316,7 +315,6 @@ inurl:"GRC.DAT" intext:"password"
 inurl:"gs/adminlogin.aspx"
 inurl:htpasswd filetype:htpasswd
 inurl:ids5web
-((inurl:ifgraph "Page generated at") OR ("This page was built using ifgraph"))
 inurl:"index.php? module=ew_filemanager"
 inurl:info.inc.php
 inurl:"install/install.php"
