@@ -41,4 +41,4 @@ If you want to submit new dorks, just open an [issue](https://github.com/Friccio
 
 ## License 📜
 
-This repository is under [GNU General Public License v3.0](https://github.com/Fricciolosa-Red-Team/evildork/blob/master/LICENSE).
+This repository is under [MIT License](https://github.com/Fricciolosa-Red-Team/evildork/blob/master/LICENSE).
