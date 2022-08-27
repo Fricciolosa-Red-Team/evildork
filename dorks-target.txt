@@ -57,6 +57,7 @@ site:*.happn.com
 site:*.grindr.com
 site:*.lovoo.com
 site:*.steampowered.com
+site:*.chaturbate.com
 intext:"@gmail.com"
 intext:"@protonmail.com"
 intext:"@yahoo.com"
